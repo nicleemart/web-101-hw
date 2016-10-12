@@ -2,7 +2,7 @@ body {
 	color: #3A3A3A;
 }
 .container {
-	width: 1100px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,7 +13,7 @@ body {
 	justify-content: space-around;
 }
 .header {
-	width: 1100px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 60px;
@@ -26,7 +26,8 @@ body {
 	width: 50px;
 }
 .headerActions {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	color: #3A3A3A;
 	font-family: sans-serif;
 	font-size: 14px;
@@ -78,34 +79,20 @@ body {
 	margin-bottom: 60px;
 }
 .footer {
-	height: 50px;
-	width: 1100px;
+	width: 100%;
 	border-top: 1px solid #9C9CA2;
 	padding: 0 20px 0 20px;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-}
-.twitter {
-	font-family: sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #EE4937;
 }
 .footerActions {
-	width: 200px;
 	display: flex;
-	justify-content: space-between;
 }
-.hire {
-	font-family: sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #EE4937;
+.footerLink {
+	display: flex;
+	align-items: center;
 }
-.rss {
+.footerLink__text {
 	font-family: sans-serif;
 	font-size: 14px;
 	font-weight: bold;
