@@ -3,27 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Title of the document</title>
+	<title>Full Post View</title>
 </head>
 
 <body>
 	<div class="container">
 		<div class="header">
-			<div class="headerCircle">
-			</div>
+			<a href="index.html">
+				<img src="logo.png">
+			</a>
 			<div class="headerActions">
-				<a class="headerActions" href="#">Articles</a>
-				<a class="headerActions" href="#">Notes</a>
-				<a class="headerActions" href="#">Info</a>
-				<a class="headerActions" href="#">Search</a>
+				<a class="headerActions__text" href="#">Articles</a>
+				<a class="headerActions__text" href="#">Notes</a>
+				<a class="headerActions__text" href="#">Info</a>
+				<a class="headerActions__text" href="#">Search</a>
 			</div>
 		<!-- closes header -->
 		</div>
-		<div class="blogContent">
+
+		<div class="mainContent">
 			<div class="post">
 				<div class="postHeader postHeader--blog">
 					<div class="columnWrapper">
-						<div class="postHeader__title postHeader__title--blogPost">
+						<div class="postHeader__title postHeader__title--blog">
 							Atomic Classification
 						</div>
 						<div class="postHeader__date">
@@ -33,7 +35,8 @@
 					</div>
 				<!-- closes post header -->
 				</div>
-				<div class="fullPost">
+
+				<div class="postPreview">
 					<p>Lorem ipsum dolor sit amet, eum te vitae intellegebat, sit nulla postulant ea. Has id consul volumus moderatius, alia perpetua cu quo, et his sint exerci ornatus. Id est modus mnesarchum, etiam doming vel ut. Te habemus atomorum nam, tamquam explicari consectetuer eum et, sint novum epicurei ut sed. Ne meliore volutpat sed. Vim platonem dissentias no. Eum ut graeco viderer voluptatum, pro autem iriure at.</p>
 
 					<p>Noster quaeque interesset duo ne. Mel laudem assueverit ea, an fastidii tacimates eum. Ut noluisse efficiantur eum. Populo molestiae intellegam vel et, ei sint zril exerci sit. Homero tamquam quaeque ut nam, omnis invenire vim te, ex munere nostro principes vel. Qui te natum consequuntur.</p>
@@ -41,22 +44,23 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/6JARVfb-FBg" frameborder="0" allowfullscreen></iframe>
 				<!-- closes full post -->
 				</div>
+
 				<div class="postTags">
 					<span class="postTags__title">
 						Tagged:
 					</span>
-					<span class="postTags__tag">Cookie Cat</span>, <span class="postTags__tag">Believe in Steven</span>
+					<a class="postTags__link" href="#">Cookie Cat</a>, <a class="postTags__link" href="#">Believe in Steven</a>
 				</div>
 			<!-- closes post -->
 			</div>
+
 			<div class="responses">
 				<div class="responses__title">
 					0 Responses
 				</div>
-				<div class="responses__text">
-					<span class="orange">Leave a comment</span> or contact me via Twitter <span class="orange">@nicleemart</span>
-				</div>
+				<a href="#">Leave a comment</a> or contact me via Twitter <a href="#">@nicleemart</a>
 			</div>
+
 			<div class="replyForm">
 				<div class="replyForm__title">
 					Leave a Reply
@@ -80,6 +84,10 @@
 			</div>
 		<!-- closes blog content -->
 		</div>
+
+		<div class="line">
+		</div>
+
 		<div class="footer">
 			<a class="footerLink" href="#">
 				<img class="footerLink__img" src="twitter.png">
