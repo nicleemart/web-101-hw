@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -60,22 +60,13 @@
 				<div class="replyForm__title">
 					Leave a Reply
 				</div>
-				<div class="replyForm__input">
-					<form>
-					<input type="text"> Name (required)
-				</div>
-				<div class="replyForm__input">
-					<input type="text"> Email (required)
-				</div>
-				<div class="replyForm__input">
-					<input type="text"> Website
-				</div>
-				<div class="replyForm__input">
-					<input type="text" class="formComment">
-				</div>
-				<div class="replyForm__input">
-					<input type="submit" name="Submit" class="submit">
-				</div>
+				<form>
+					<span><input type="text" class="replyForm__input"> Name (required)</span>
+					<span><input type="text" class="replyForm__input"> Email (required)</span>
+					<span><input type="text" class="replyForm__input"> Website</span>
+					<span><input type="text" class="replyForm__input replyForm__input--comment"></span>
+					<input type="submit" name="Submit" class="submit replyForm__input">
+				</form>
 			</div>
 		</div>
 

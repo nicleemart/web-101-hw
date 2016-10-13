@@ -5,6 +5,10 @@ a {
 	color: #EE4937;
 	text-decoration: none;	
 }
+form {
+	display: flex;
+	flex-direction: column;
+}
 .container {
 	width: 100%;
 	display: flex;
@@ -114,6 +118,9 @@ a {
 .responses__title {
 	font-size: 24px;
 }
+.replyForm {
+	width: 400px;
+}
 .replyForm__title {
 	font-size: 24px;
 	margin-bottom: 20px;
@@ -121,11 +128,12 @@ a {
 .replyForm__input {
 	margin-bottom: 5px;
 }
-.formComment {
+.replyForm__input--comment {
 	width: 400px;
 	height: 100px;
 }
 .submit {
+	width: 60px;
 	background-color: #000000;
 	color: #FFFFFF;
 	border: none;
