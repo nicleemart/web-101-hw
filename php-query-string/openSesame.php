@@ -4,10 +4,12 @@
 </form>
 
 <?php
-function openSesame()
+function openSesame($pw)
 {
-    if (isset($_GET["Submit"]) && ($_GET["pw"] == "doggo")) {
-        echo "Correct!";
+	$pw = strtolower($pw);
+
+    if (isset($_GET["Submit"]) && ($pw == "doggo")) {
+        return "Correct!";
     } elseif (isset($_GET["Submit"]))  {
         return "Wrong, try again.";
     }
@@ -16,4 +18,4 @@ function openSesame()
 
 <?php 
 	echo openSesame($_GET["pw"]); 
-	?>
+?>
