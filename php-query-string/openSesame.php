@@ -7,11 +7,13 @@
 function openSesame()
 {
     if (isset($_GET["Submit"]) && ($_GET["pw"] == "doggo")) {
-        return "Correct";
-    }
-
-    else {
-        return "Wrong, try again";
+        echo "Correct!";
+    } elseif (isset($_GET["Submit"]))  {
+        return "Wrong, try again.";
     }
 }
 ?>
+
+<?php 
+	echo openSesame($_GET["pw"]); 
+	?>
