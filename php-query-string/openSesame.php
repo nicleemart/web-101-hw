@@ -7,15 +7,13 @@
 function openSesame($pw)
 {
 	$pw = strtolower($pw);
+	$Submit = $_GET["Submit"];
 
-    if (isset($_GET["Submit"]) && ($pw == "doggo")) {
+    if (isset($Submit) && ($pw == "doggo")) {
         return "Correct!";
-    } elseif (isset($_GET["Submit"]))  {
+    } elseif (isset($Submit))  {
         return "Wrong, try again.";
     }
-}
-?>
-
-<?php 
+} 
 	echo openSesame($_GET["pw"]); 
 ?>
