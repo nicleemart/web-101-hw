@@ -1,15 +1,24 @@
-<?php
-
-    $operator = array(
+<?php 
+        $operator = array(
         "add"=>"+",
         "subtract"=>"-",
         "multiply"=>"x"
     );
 
-    if (!isset($_GET['submit'])) {
+function calculator($operator)
+{   $firstNum = $_GET["firstNum"];
+    $secondNum = $_GET["secondNum"];
+    $Submit = $_GET["Submit"];
+    global $operator;
 
-} 
-    
+    if (isset($Submit) && ($operator == "add")) {
+        return $firstNum + $secondNum;
+    } elseif (isset($Submit) && ($operator == "subtract")) {
+        return $firstNum - $secondNum;
+    }
+}
+
+echo calculator();
 ?>
 
 <form method="get" action="">
@@ -17,7 +26,7 @@
     <select>
        <?php
    foreach($operator as $key => $value){
-      echo '<option value="'.$key.'">'.$value.'</option>';
+      echo "<option name=".$key.">".$value."</option>";
   }
  ?>
     </select>
