@@ -1,17 +1,8 @@
-<form method="get" action="">
-	<input type="text" name="firstNum" placeholder="Enter a number">
-    <select>
-      <option value="add" name="add">+</option>
-    </select>
-    <input type="text" name="secondNum" placeholder="Enter a number">
-	<input type="submit" name="Submit">
-</form>
-
 <?php
 function calculator($firstNum, $operator, $secondNum)
 {
-	$name = ucfirst(strtolower($name));
-	$Submit = $_GET["Submit"];
+    $operator = array("+", "-", "x");
+    $Submit = $_GET["Submit"];
 
     if (isset($Submit) && ($name == "Nikki")) {
         return "Nikki is the best name ever!";
@@ -27,5 +18,18 @@ function calculator($firstNum, $operator, $secondNum)
         return "Oh, hey $name. Try a cooler name next time.";
     }
 } 
-	echo greeting($_GET["name"]); 
+    echo greeting($_GET["name"]); 
 ?>
+
+<form method="get" action="">
+	<input type="text" name="firstNum" placeholder="Enter a number">
+    <select name="state" id="state">
+        <option value="" selected="selected">--- Select State ---</option>
+
+    </select>
+    <select>
+      <option value="add" name="add">+</option>
+    </select>
+    <input type="text" name="secondNum" placeholder="Enter a number">
+	<input type="submit" name="Submit">
+</form>

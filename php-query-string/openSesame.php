@@ -10,9 +10,9 @@ function openSesame($pw)
 	$Submit = $_GET["Submit"];
 
     if (isset($Submit) && ($pw == "doggo")) {
-        return "Correct!";
+        return "Correct! <br> <img src='https://s-media-cache-ak0.pinimg.com/originals/58/31/12/583112a9efb737afcdce1a059d32e1fd.gif'>";
     } elseif (isset($Submit))  {
-        return "Wrong, try again.";
+        return "Wrong, try again. <br> <img src='breakfast.gif'>";
     }
 } 
 	echo openSesame($_GET["pw"]); 
