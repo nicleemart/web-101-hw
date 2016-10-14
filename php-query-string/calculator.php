@@ -1,10 +1,14 @@
 <form method="get" action="">
-	<input type="text" name="name" placeholder="Enter Your Name">
+	<input type="text" name="firstNum" placeholder="Enter a number">
+    <select>
+      <option value="add" name="add">+</option>
+    </select>
+    <input type="text" name="secondNum" placeholder="Enter a number">
 	<input type="submit" name="Submit">
 </form>
 
 <?php
-function greeting($name)
+function calculator($firstNum, $operator, $secondNum)
 {
 	$name = ucfirst(strtolower($name));
 	$Submit = $_GET["Submit"];
