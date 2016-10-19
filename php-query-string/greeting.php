@@ -19,6 +19,10 @@ function greeting($name)
         return "I like to watch you sleep sometimes. And by sometimes, I mean often.";
     } elseif (isset($Submit) && ($name == "Steven")) {
         return "No more cat fingers! I want Steven fingers! And I don't mean little me heads on fingers, I mean my regular fingers!";
+    } elseif (isset($Submit) && ($name == "Peridot")) {
+        return "I called Yellow Diamond a clod... to her face!";
+     } elseif (isset($Submit) && ($name == "Rooster")) {
+        return "Bork bork, Rooster!";
     } elseif (isset($Submit))  {
         return "Oh, hey $name. Try a cooler name next time.";
     }
